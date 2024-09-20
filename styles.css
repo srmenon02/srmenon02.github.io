@@ -181,8 +181,15 @@ footer {
     height: 200px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Adds some space between the image and the text */
+    margin-bottom: 20px; /* Adds space between the image and text */
 }
+
+.about-text {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center; /* Centers the text content */
+}
+
 
 .about-text {
     max-width: 600px;
