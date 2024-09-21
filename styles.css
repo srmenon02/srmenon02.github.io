@@ -195,3 +195,8 @@ footer {
     max-width: 600px;
     padding: 20px;
 }
+
+a {
+    display: block;
+    margin-bottom: 10px; /* Adds some space between the links */
+}
