@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #89CFF0, #89CFF0);
+    background: linear-gradient(to right, #89CFF0, #00008B);
     color: #89CFF0;
 }
 
@@ -207,7 +207,7 @@ a {
 
 .project-links a {
     display: inline-block;
-    background-color: #89CFF0
+    background-color: #89CFF0;
     color: white;
     padding: 10px 15px;
     text-align: center;
