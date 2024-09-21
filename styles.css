@@ -8,12 +8,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #f8f9fa;
+    background-color: #89CFF0;
 }
 
 header {
-    background: linear-gradient(to right, #667eea, #764ba2);
-    color: #fff;
+    background: linear-gradient(to right, #89CFF0, #89CFF0);
+    color: #89CFF0;
 }
 
 .hero {
@@ -207,15 +207,15 @@ a {
 
 .project-links a {
     display: inline-block;
-    background-color: #4CAF50; /* Green background */
+    background-color: #89CFF0
     color: white;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    margin-right: 10px; /* Adds space between the two links */
+    margin-right: 10px;
 }
 
 .project-links a:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #00008B
 }
