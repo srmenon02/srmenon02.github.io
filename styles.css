@@ -145,6 +145,7 @@ p {
 }
 
 .button {
+    display: inline-block;
     background-color: #667eea;
     color: white;
     padding: 10px 15px;
