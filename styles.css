@@ -8,12 +8,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #89CFF0;
+    background-color: #FFFFFF;
 }
 
 header {
     background: linear-gradient(to right, #89CFF0, #00008B);
-    color: #89CFF0;
+    color: #FFFFFF;
 }
 
 .hero {
