@@ -51,8 +51,8 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 10px;
-    background-color: #444;
+    padding: 0px;
+    background: inherit;
 }
 
 nav ul li {
@@ -64,6 +64,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    
 }
 
 nav ul li a:hover {
@@ -110,11 +111,18 @@ p {
     text-align: left;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
 
 .card {
     background-color: #fff;
@@ -220,3 +228,98 @@ a {
 .project-links a:hover {
     background-color: #00008B
 }
+
+/* Toggle button */
+#darkToggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    color: white;
+}
+
+body.dark-mode {
+    background-color: #0f172a; /* deep navy-slate */
+    color: #e2e8f0; /* soft slate-gray text */
+}
+
+body.dark-mode header {
+    background: #0f172a; /* same as body background */
+}
+
+body.dark-mode nav {
+    background-color: #1e293b;
+}
+
+body.dark-mode nav {
+    background: inherit;
+}
+
+body.dark-mode nav ul li a {
+    color: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode a {
+    color: #60a5fa; /* bright blue link */
+}
+
+body.dark-mode a:hover {
+    color: #facc15; /* amber hover */
+}
+
+body.dark-mode .cta-button {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+body.dark-mode .cta-button:hover {
+    background-color: #475569;
+}
+
+body, .card, header, nav, footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode .card a {
+    color: #ffffff; 
+}
+
+body.dark-mode .card a:hover {
+    color: #facc15; /* bright amber/gold on hover */
+}
+
+body.dark-mode .button {
+    color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+    background-color: #475569;  /* slightly lighter on hover */
+    color: #facc15;  /* optional: gold on hover */
+}
+
+/* By default (light mode) */
+.icon-sun {
+  display: none !important;  /* force hidden */
+  color: #facc15;            /* amber for when shown */
+}
+
+.icon-moon {
+  display: inline-block;
+  color: #000000;            /* black moon */
+}
+
+/* In dark mode */
+body.dark-mode .icon-sun {
+  display: inline-block !important;
+}
+
+body.dark-mode .icon-moon {
+  display: none !important;
+}
+
