@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #ADD8E6, #00008B);
+    background: linear-gradient(to right, #e6c7ad, #00008B);
     color: #fff;
 }
 
@@ -322,4 +322,3 @@ body.dark-mode .icon-sun {
 body.dark-mode .icon-moon {
   display: none !important;
 }
-

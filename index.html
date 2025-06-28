@@ -9,50 +9,30 @@
     <link rel="stylesheet" href="/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <script src="/scripts.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <button id="darkToggle" aria-label="Toggle Dark Mode" class="theme-toggle">
-    <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
-    <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
-    </button>
-
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<script>
-  const toggle = document.getElementById('darkToggle');
-
-    toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-    });
-
-    // On load, apply saved theme and icons visibility
-    window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
-    });
-
-</script>
 <body>
+    <div class="head">
+    <button id="darkToggle" aria-label="Toggle Dark Mode" class="theme-toggle">
+        <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+        <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+    </button>
+    </div>
+
     <header>
         <div class="hero">
             <h1>Suraj Menon</h1>
             <p><span id="typed-text"></span></p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <a href="#research" class="cta-button">View My Work</a>
         </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -145,6 +125,7 @@
         <p>© 2025 Suraj Menon</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="scripts.js"></script>
     <script>
     AOS.init({ duration: 800, once: true });
     document.addEventListener("DOMContentLoaded", function () {
@@ -156,6 +137,21 @@
         });
     });
     </script>
+    <script>
+    const toggle = document.getElementById('darkToggle');
 
+    toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+
+    // On load, apply saved theme and icons visibility
+    window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 </html>
