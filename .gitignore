@@ -25,6 +25,3 @@ dist-ssr
 
 Files/
 .env
-package-lock.json
-package.json
-vite.config.js
