@@ -1,5 +1,8 @@
+import { RevealOnScroll } from "../ReviewOnScroll";
+
 export const Projects = () => {
     return <section id="projects" className="min-h-screen flex items-center justify-center py-20">
+        <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                 Featured Projects
@@ -11,7 +14,7 @@ export const Projects = () => {
                         Personal project to learn more about cyber. A real-time log monitoring tool to simulate 
                         and track cybersecurity alerts over time
                     </p>
-                    <div>
+                    <div className="flex flex-wrap gap-2 mb-4 items-center justify-center">
                         {["MongoDB", "React.js", "Kafka", "TailwindCSS", "Docker"].map((tech, key) => (
                                 <span 
                                 key={key}
@@ -38,7 +41,7 @@ export const Projects = () => {
                         Co-founder of project working with the Korle Bu Teaching Hospital to design a non-invasive and cost-efficient cervical
                         cancer screening urine collection device for women in Accra, Ghana.
                     </p>
-                    <div className="flex justify-center gap-4 items-center">
+                    <div className="flex flex-wrap gap-2 mb-4 items-center justify-center">
                         {["SOLIDWORKS", "CAD", "Project Management"].map((tech, key) => (
                                 <span 
                                 key={key}
@@ -64,7 +67,7 @@ export const Projects = () => {
                     <p className="text-gray-400 mb-3">
                         A metabolic regulome network from oct-omics and machine learning
                     </p>
-                    <div className="flex justify-center gap-4 items-center">
+                    <div className="flex flex-wrap gap-2 mb-4 items-center justify-center">
                         {["scikt-learn", "Shapley Analysis", "ML/AI", "MATLAB"].map((tech, key) => (
                                 <span 
                                 key={key}
@@ -90,7 +93,7 @@ export const Projects = () => {
                     <p className="text-gray-400 mb-3">
                         Built a simulation in Python to improve new patient access to care within Michigan Medicine
                     </p>
-                    <div className="flex justify-center gap-4 items-center">
+                    <div className="flex flex-wrap gap-2 mb-4 items-center justify-center">
                         {["pandas", "Agile", "git", "Discrete Event Simulation"].map((tech, key) => (
                                 <span 
                                 key={key}
@@ -136,7 +139,7 @@ export const Projects = () => {
                     <p className="text-gray-400 mb-3">
                         Development of a catheter insertion guide to assist female Spinal-Cord Injury patients with incontinence
                     </p>
-                    <div className="flex justify-center gap-4 items-center">
+                    <div className="flex justify-center gap-4 items-center items-center justify-center">
                         {["SOLIDWORKS", "COMSOL Multiphysics"].map((tech, key) => (
                                 <span 
                                 key={key}
@@ -155,5 +158,6 @@ export const Projects = () => {
                 </div>
             </div>
         </div>
+        </RevealOnScroll>
     </section>
 };
